@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+* {
+    font-family: 'Montserrat';
+    box-sizing: border-box;
+}
+
+body {
+    background: #F1FAEE;
+}
+
+h1 {
+    color: #E63946;
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.start-form {
+    width: 80vw;
+    height: 30vh;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 0px 13px 28px -10px rgba(0, 0, 0, 0.347);
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+}
+
+.hidden{
+    /* opacity: 0; */
+    display: none;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn {
+    width: 10rem;
+    height: min-content;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0px 13px 28px -10px rgba(0, 0, 0, 0.347);
+
+}
+
+.easy {
+    background-image: linear-gradient(#a8dadca0, #A8DADC);
+}
+
+.medium {
+    background-image: linear-gradient(#457B9Da0,#457B9D);
+}
+
+.hard {
+    background-image: linear-gradient(#1D3557a0, #1D3557);
+}
+
+.game-container {
+    gap: 0.1vw;
+    /* display: none; */
+    opacity: 0;
+    width: min-content;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: auto;
+    box-shadow: 0px 13px 28px -10px rgba(0, 0, 0, 0.347);
+    justify-content: center;
+    transition: all 1s ease-out;
+    background: #ffffff;
+}
+
+.grid-layout {
+    display: grid;
+    opacity: 1;
+}
+
+.card {
+    border-radius: 5px;
+}
+
+.card:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.card-easy {
+    background: #a8dadc;
+    width: 10vw;
+    height: 10vw;
+    padding: 1.5rem;
+    transition: all 1s ease-out;
+
+}
+
+.card-medium {
+    fill:white;
+    width: 8vw;
+    height: 8vw;
+    padding: 1rem;
+    background: #457B9D;
+    transition: all 1s ease-out;
+}
+
+.card-hard {
+    background: #1D3557;
+    width: 7vw;
+    height: 7vw;
+    padding: 1rem;
+    transition: all 1s ease-out;
+}
+
+.card-medium img{
+    filter: invert(1);
+}
+
+.card-hard img{
+    filter: invert(1);
+}
+
+.hidden-card {
+    display: none;
+    /* opacity: 1; */
+}
+
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0, 0, 0, 0.765);
+    overflow-x: hidden;
+    opacity: 0;
+    transition: all .4s ease-in;
+  }
+  
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 10rem;
+    transition: all .2s ease-in;
+    color: white;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
