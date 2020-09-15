@@ -1,5 +1,5 @@
 # Memory-Game
 
-Simple memory game
+### Simple memory game
 
 Select the difficulty and start playing. Have fun!
